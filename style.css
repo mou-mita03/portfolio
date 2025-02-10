@@ -772,3 +772,44 @@ h3.my-profession
        max-width: 100%; 
    }
 }
+
+
+
+
+
+ #gallery {
+        text-align: center;
+        padding: 50px 20px;
+        background: #ffffff;
+    }
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .gallery-item {
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+
+    body.dark-mode .gallery-item {
+        border: 2px solid white; /* Change border color in dark mode */
+    }
+    
+    body.dark-mode .gallery-container {
+        background-color: #222; /* Darker background for the gallery */
+    }
